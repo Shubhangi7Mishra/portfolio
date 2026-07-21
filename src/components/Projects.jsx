@@ -48,7 +48,7 @@ export default function Projects() {
       tech: ["Python", "OpenCV", "TensorFlow", "Flask", "JavaScript", "MongoDB Atlas"],
       badge: "AI/ML + Computer Vision",
       badgeColor: "bg-cyan-500/10 text-cyan-300 border-cyan-500/30",
-      image: "/facial_recognition_custom.jpeg",
+      image: "./facial_recognition_custom.jpeg",
       github: "https://github.com/Shubhangi7Mishra",
       live: "#"
     },
@@ -62,7 +62,7 @@ export default function Projects() {
       tech: ["React.js", "Locomotive Scroll", "Framer Motion", "Tailwind CSS"],
       badge: "React + Motion Skill",
       badgeColor: "bg-purple-500/10 text-purple-300 border-purple-500/30",
-      image: "/react_experience_custom.jpeg",
+      image: "./react_experience_custom.jpeg",
       github: "https://github.com/Shubhangi7Mishra",
       live: "#"
     },
@@ -76,7 +76,7 @@ export default function Projects() {
       tech: ["HTML5", "CSS3", "JavaScript", "GSAP", "Locomotive Scroll", "Shery.js"],
       badge: "Creative Canvas & GSAP",
       badgeColor: "bg-indigo-500/10 text-indigo-300 border-indigo-500/30",
-      image: "/gsap_canvas_custom.png",
+      image: "./gsap_canvas_custom.png",
       github: "https://github.com/Shubhangi7Mishra",
       live: "#"
     }
