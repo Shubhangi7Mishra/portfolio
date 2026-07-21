@@ -21,6 +21,10 @@ import Projects from './components/Projects';
 import Timeline from './components/Timeline';
 import Contact from './components/Contact';
 
+// Image Asset Imports
+import catMusicImg from './assets/cat_custom_player.jpeg';
+import shubhangiPortraitImg from './assets/shubhangi_new_portrait.jpeg';
+
 // Custom SVG Icons for GitHub and LinkedIn
 const GithubIcon = ({ className = "w-5 h-5" }) => (
   <svg className={className} fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -137,7 +141,7 @@ export default function App() {
         {/* Cat Image Thumbnail */}
         <div className="relative w-11 h-11 rounded-xl overflow-hidden shadow-md flex-shrink-0 border border-white/10">
           <img
-            src="./cat_custom_player.jpeg"
+            src={catMusicImg}
             alt="Cat Music Thumbnail"
             className="w-full h-full object-cover"
           />
@@ -179,8 +183,9 @@ export default function App() {
                 <span className="font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-400 to-white text-base">SM</span>
               </div>
             </div>
-            <span className="font-extrabold text-lg tracking-tight text-white group-hover:text-purple-400 transition-colors">
-              Shubhangi.Mishra
+            <span className="font-extrabold text-lg tracking-tight transition-colors flex items-center">
+              <span className="text-white group-hover:text-purple-400 transition-colors duration-300">Shubhangi</span>
+              <span className="text-purple-400 group-hover:text-purple-300 transition-colors duration-300">.Mishra</span>
             </span>
           </a>
 
@@ -321,7 +326,7 @@ export default function App() {
                   {/* Portrait Frame */}
                   <div className="relative aspect-square rounded-2xl overflow-hidden border border-white/10 group">
                     <img
-                      src="./shubhangi_new_portrait.jpeg"
+                      src={shubhangiPortraitImg}
                       alt="Shubhangi Mishra Profile"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
@@ -331,9 +336,9 @@ export default function App() {
                         <p className="text-xs font-bold text-white">Shubhangi Mishra</p>
                         <p className="text-[11px] font-semibold text-purple-400">B.E. AI & ML (SIRT Bhopal)</p>
                       </div>
-                      <span className="relative flex h-3 w-3">
-                        <span className="animate-neon-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500 shadow-[0_0_10px_#10b981] animate-neon-blink"></span>
+                      <span className="relative flex h-3.5 w-3.5 items-center justify-center">
+                        <span className="neon-ping-dot absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span className="neon-pulse-dot relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
                       </span>
                     </div>
                   </div>
